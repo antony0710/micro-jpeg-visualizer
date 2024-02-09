@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# Written by Raul Aguaviva as an exercise
-# beware not optimized for speed :-)
 
 from struct import *
 import math 
@@ -267,7 +264,7 @@ class jpeg:
 				break		
 		return (self.width, self.height, self.image)
 
-width, height, image = jpeg().decode(open('images/porsche.jpg', 'rb').read())
+width, height, image = jpeg().decode(open('porsche.jpg', 'rb').read())
 
 #show image
 from PIL import Image 
